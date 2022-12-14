@@ -1,0 +1,35 @@
+@charset "utf-8";
+@keyframes fish{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 0 -400%;
+    }
+}
+.fish{
+    animation: fish 1s steps(4) infinite;
+}
+.si_fish{
+    animation: si_fish 1s steps(4) infinite;
+}
+@keyframes si_fish{
+    from{
+        background-position: 0 -400%;
+    }
+    to{
+        background-position: 0 -800%;
+    }
+}
+//发炮
+@keyframes f_cannon{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 0 -500%;
+    }
+}
+.f_cannon{
+    animation: f_cannon 1s steps(5) infinite;
+}

@@ -1,0 +1,328 @@
+@charset "utf-8";
+body{
+    overflow: hidden;
+}
+.web{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url(../img/bg.jpg) no-repeat left top/cover;
+    .buttom{
+        width: 765px;
+        height: 78px;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        background: url(../img/bottom.png) no-repeat;
+        .cannon{
+            .cannon1{
+                height: 74px;
+                width: 74px;
+                background: skyblue;
+                position: absolute;
+                left: 50%;
+                background: url(../img/cannon/cannon1.png);
+                .pao1{
+                    width: 25px;
+                    height: 28px;
+                    background: url(../img/cannon/bullet.png);
+                    background-position:-86px 0;
+                    position: absolute;
+                    top: -25px;
+                    left: 33%;
+                    
+                    
+                }
+                
+            }
+            .cannon2{
+                height: 76px;
+                width: 74px;
+                background: skyblue;
+                position: absolute;
+                left: 50%;
+                background: url(../img/cannon/cannon2.png);
+                .pao2{
+                    width: 25px;
+                    height: 30px;
+                    background: url(../img/cannon/bullet.png);
+                    background-position:-62px 0;
+                    position: absolute;
+                    top: -25px;
+                    left: 33%;
+                   
+                }
+                
+            }.cannon3{
+                height: 76px;
+                width: 74px;
+                background: skyblue;
+                position: absolute;
+                left: 50%;
+                background: url(../img/cannon/cannon3.png);
+                .pao3{
+                    width: 28px;
+                    height: 31px;
+                    background: url(../img/cannon/bullet.png);
+                    background-position:-31px -36px;
+                    position: absolute;
+                    top: -28px;
+                    left: 33%;
+                    
+                }
+                
+            }.cannon4{
+                height: 83px;
+                width: 74px;
+                background: skyblue;
+                position: absolute;
+                left: 50%;
+                background: url(../img/cannon/cannon4.png);
+                .pao4{
+                    width: 28px;
+                    height: 35px;
+                    background: url(../img/cannon/bullet.png);
+                    background-position:-31px -82px;
+                    position: absolute;
+                    top: -28px;
+                    left: 33%;
+                    
+                }
+                
+            }.cannon5{
+                height: 85px;
+                width: 74px;
+                background: skyblue;
+                position: absolute;
+                left: 50%;
+                background: url(../img/cannon/cannon5.png);
+                .pao5{
+                    width: 31px;
+                    height: 34px;
+                    background: url(../img/cannon/bullet.png);
+                    background-position:0 -82px;
+                    position: absolute;
+                    top: -31px;
+                    left: 33%;
+                    
+                }
+                
+            }.cannon6{
+                height: 89px;
+                width: 74px;
+                background: skyblue;
+                position: absolute;
+                left: 50%;
+                background: url(../img/cannon/cannon6.png);
+                .pao6{
+                    width: 31px;
+                    height: 37px;
+                    background: url(../img/cannon/bullet.png);
+                    background-position:0 -45px;
+                    position: absolute;
+                    top: -31px;
+                    left: 33%;
+                   
+                }
+                
+            }.cannon7{
+                height: 94px;
+                width: 74px;
+                background: skyblue;
+                position: absolute;
+                left: 50%;
+                background: url(../img/cannon/cannon7.png);
+                .pao7{
+                    width: 31px;
+                    height: 45px;
+                    background: url(../img/cannon/bullet.png);
+                    background-position:0 0;
+                    position: absolute;
+                    top: -40px;
+                    left: 30%;
+                    
+                }
+                
+            }
+        }
+        .de{
+            position: absolute;
+            width: 44px;
+            height: 31px;
+            top: 30px;
+            left: 355px;
+            background: url(../img/bottom.png);
+            background-position: -135px 50px;
+        }
+        .add{
+            position: absolute;
+            width: 44px;
+            height: 31px;
+            background: skyblue;
+            top: 30px;
+            left: 450px;
+            background: url(../img/bottom.png);
+            background-position: -48px 50px;
+        }
+         .fengs{
+             width: 146px;
+             height: 25px;
+             position: absolute;
+             top: 45px;
+             left: 15px;
+             font-weight: bold;
+             text-align: right;
+             letter-spacing: 14px;
+             line-height: 25px;
+            
+         }
+         .tiao{
+             width: 212px;
+             height: 18px;
+             position: absolute;
+             top: 45px;
+             left: 546px;
+             overflow: hidden;
+             .jingdu{
+                 position: absolute;
+                background: url(../img/bottom.png);
+                background-position: 0 -102px;
+                width: 100%;
+                height: 100%;
+                 left: -100%;
+             }
+             
+         }  
+    }
+    .main{
+        width: 100%;
+        height: 90%;
+        position: relative;
+        .pos_1{
+            position: absolute;
+            left: -300px;
+        }
+        .pos_0{
+            position: absolute;
+            right: -300px;
+        }
+        .fish1{
+            width: 55px;
+            height: 37px;
+            background: url(../img/fish/fish1.png);
+        }
+        .fish2{
+            width: 78px;
+            height: 64px;
+            background: url(../img/fish/fish2.png);
+        }
+        .fish3{
+            width: 72px;
+            height: 56px;
+            background: url(../img/fish/fish3.png);
+        }
+        .fish4{
+            width: 77px;
+            height: 59px;
+            background: url(../img/fish/fish4.png);
+        }
+        .fish5{
+            width: 107px;
+            height: 122px;
+            background: url(../img/fish/fish5.png);
+        }
+        .fish6{
+            width: 105px;
+            height: 79px;
+            background: url(../img/fish/fish6.png);
+        }
+        .fish7{
+            width: 92px;
+            height: 151px;
+            background: url(../img/fish/fish7.png);
+        }
+        .fish8{
+            width: 174px;
+            height: 126px;
+            background: url(../img/fish/fish8.png);
+        }
+        .fish9{
+            width: 166px;
+            height: 183px;
+            background: url(../img/fish/fish9.png);
+        }
+        .fish10{
+            width: 178px;
+            height: 187px;
+            background: url(../img/fish/fish10.png);
+        }
+        .fish11{
+            width: 509px;
+            height: 270px;
+            background: url(../img/fish/fish11.png);
+        }
+        .fish12{
+            width: 516px;
+            height: 273px;
+            background: url(../img/fish/fish12.png);
+        }
+        
+    }
+    .wang1{
+        width: 116px;
+         height: 118px;
+        background: url(../img/web1.png);
+        position: absolute;
+    }
+    .wang2{
+        position: absolute;
+         width: 137px;
+       height: 142px;
+       background: url(../img/web2.png);
+    }
+    .wang3{
+        
+        width: 156px;
+        height: 162px;
+        background: url(../img/web3.png);
+    }
+    .wang4{
+        width: 180px;
+        height: 174px;
+        background: url(../img/web4.png);
+    }
+    .wang5{
+        width: 163px;
+        height: 155px;
+        background: url(../img/web5.png);
+    }
+    .wang6{
+        width: 191px;
+        height: 181px;
+        background: url(../img/web6.png);
+    }
+    .wang7{
+        width: 242px;
+        height: 244px;
+        background: url(../img/web7.png);
+    }
+    .yin{
+        width: 60px;
+        height: 60px;
+        background: url(../img/coinAni1.png);
+        animation: jinbi .3s steps(10) infinite;
+    }
+    .jin{
+        width: 60px;
+        height: 60px;
+        background: url(../img/coinAni2.png);
+        animation: jinbi .3s steps(10) infinite;
+    }
+    .add_gold{
+        width: 30px;
+        height: 30px;
+        color: yellow;
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
