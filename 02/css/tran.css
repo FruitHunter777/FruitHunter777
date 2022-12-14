@@ -1,0 +1,130 @@
+@keyframes fish {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 0 -400%; } }
+.fish {
+  animation: fish 1s steps(4) infinite; }
+
+
+@keyframes f_cannon {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 0 -500%; } 
+    }
+.f_cannon {
+  animation: f_cannon 1s steps(5) infinite; }
+
+@keyframes wang {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 0 -500%; } 
+    }
+.wang {
+  animation: wang 1s steps(5) infinite; }
+.si_fish1{
+  animation: si_fish1 1s steps(4) infinite; }
+
+@keyframes si_fish1 {
+  from {
+    background-position: 0 -400%; }
+  to {
+    background-position: 0 -800%; } }
+.si_fish2{
+  animation: si_fish2 1s steps(4) infinite; }
+
+@keyframes si_fish2 {
+  from {
+    background-position: 0 -400%; }
+  to {
+    background-position: 0 -800%; } }
+    .si_fish3{
+  animation: si_fish3 1s steps(4) infinite; }
+
+@keyframes si_fish3 {
+  from {
+    background-position: 0 -400%; }
+  to {
+    background-position: 0 -800%; } }
+    .si_fish4{
+  animation: si_fish4 1s steps(4) infinite; }
+
+@keyframes si_fish4 {
+  from {
+    background-position: 0 -400%; }
+  to {
+    background-position: 0 -800%; } }
+    .si_fish5{
+  animation: si_fish5 1s steps(4) infinite; }
+
+@keyframes si_fish5 {
+  from {
+    background-position: 0 -400%; }
+  to {
+    background-position: 0 -800%; } }
+    .si_fish6{
+  animation: si_fish6 1s steps(6) infinite; }
+
+@keyframes si_fish6 {
+  from {
+    background-position: 0 -600%; }
+  to {
+    background-position: 0 -1200%; } }
+    .si_fish7{
+  animation: si_fish7 1s steps(5) infinite; }
+
+@keyframes si_fish7 {
+  from {
+    background-position: 0 -500%; }
+  to {
+    background-position: 0 -1000%; } }
+    .si_fish8{
+  animation: si_fish8 1s steps(6) infinite; }
+
+@keyframes si_fish8 {
+  from {
+    background-position: 0 -600%; }
+  to {
+    background-position: 0 -1200%; } }
+    .si_fish9{
+  animation: si_fish9 1s steps(6) infinite; }
+
+@keyframes si_fish9 {
+  from {
+    background-position: 0 -600%; }
+  to {
+    background-position: 0 -1200%; } }
+    .si_fish10{
+  animation: si_fish10 1s steps(5) infinite; }
+
+@keyframes si_fish10 {
+  from {
+    background-position: 0 -500%; }
+  to {
+    background-position: 0 -1000%; } }
+    .si_fish11{
+  animation: si_fish11 1s steps(6) infinite; }
+
+@keyframes si_fish11 {
+  from {
+    background-position: 0 -600%; }
+  to {
+    background-position: 0 -1200%; } }
+    .si_fish12{
+  animation: si_fish12 1s steps(6) infinite; }
+
+@keyframes si_fish12 {
+  from {
+    background-position: 0 -600%; }
+  to {
+    background-position: 0 -1200%; } }
+    
+
+@keyframes jinbi {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 0 -1000%; } 
+    }  

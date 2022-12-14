@@ -1,0 +1,366 @@
+/* normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+body {
+  font-family: "PingFangSC-Light", "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  margin: 0;
+}
+a,
+img {
+  -webkit-touch-callout: none; /* 禁止长按链接与图片弹出菜单 */
+}
+html,
+body {
+  -webkit-user-select: none; /* ） */
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  box-sizing: content-box; /* 2 */
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a,
+button,
+textarea,
+img,
+div {
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  -webkit-appearance: none;
+  border: none;
+}
+a,
+button,
+textarea,
+img {
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  -webkit-appearance: none;
+  border: none;
+/*-webkit-user-modify:read-write-plaintext-only;*/
+}
+body,
+div,
+span,
+canvas,
+iframe {
+/*    -webkit-touch-action:none;
+		-ms-touch-action:none;
+		touch-action:none;*/
+  -webkit-touch-callout: none;
+  -ms-touch-callout: none;
+  touch-callout: none;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -ms-tap-highlight-color: rgba(0,0,0,0);
+  tap-highlight-color: rgba(0,0,0,0);
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-overflow-scrolling: touch;
+}
+body {
+  position: relative;
+  background-color: #ccc;
+}
+a {
+  cursor: pointer;
+}
+.wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  max-width: 640px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 100vh;
+}
+.wrapper .scroller {
+  position: absolute;
+  width: 100%;
+}
+.wrapper .scroller .top-tips,
+.wrapper .scroller .bot-tips {
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  font-size: 0.7rem;
+  background-color: #ccc;
+  color: #606060;
+}
+.wrapper .scroller .top-tips {
+  position: absolute;
+  top: -3rem;
+  max-width: 640px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.wrapper .scroller .swiper {
+  width: 100%;
+  height: 11rem;
+  margin-bottom: 0;
+}
+.wrapper .gameListDiv {
+  background-color: #fff;
+  width: 100%;
+}
+.wrapper .gameListDiv .gameDiv {
+  height: 4.2rem;
+  line-height: 4.2rem;
+  width: 100%;
+}
+.wrapper .gameListDiv .gameDiv .gameImgDiv {
+  padding: 13px 6px 11px 13px;
+  float: left;
+  line-height: 0;
+  width: auto; /*24.75%;*/
+  height: 100%;
+  box-sizing: border-box;
+}
+.wrapper .gameListDiv .gameDiv .gameImgDiv .gameImg {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 15px;
+  line-height: 0;
+}
+.wrapper .gameListDiv .gameDiv .gameInfoDiv {
+  width: 48%;
+  line-height: 16px;
+  float: left;
+  height: 100%;
+  padding: 0.3rem 0;
+  position: relative;
+  margin-left: 0.4rem;
+}
+.wrapper .gameListDiv .gameDiv .gameInfoDiv .gameName {
+  font-size: 0.78rem;
+  color: #4a4a49;
+  position: absolute;
+  top: 2%;
+}
+.wrapper .gameListDiv .gameDiv .gameInfoDiv .gameDes {
+  font-size: 12px;
+  color: #7b7c7d;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  position: absolute;
+  bottom: 11%;
+}
+.wrapper .gameListDiv .gameDiv .startGameDiv {
+  float: right;
+  width: 3.7rem;
+  text-align: center;
+}
+.wrapper .gameListDiv .gameDiv .startGameDiv .btnStartGame {
+  display: inline-block;
+  border: 1px solid #672651;
+  width: 80%;
+  line-height: normal;
+  font-size: 0.7rem;
+  padding: 6% 0;
+  color: #a18593;
+  border-radius: 4px;
+}
+.wrapper .refresh-success-tips {
+  position: absolute;
+  z-index: 999;
+  height: 1.2rem;
+  background-color: #000;
+  line-height: 1.2rem;
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+  background: rgba(7,17,27,0.7);
+  max-width: 640px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #fff;
+  display: none;
+}
+.wrapper .bot-tips {
+  position: absolute;
+  bottom: -3rem;
+  max-width: 640px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

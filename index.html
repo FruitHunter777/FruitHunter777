@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <title>happy game</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="libs/swipper/swiper.css">
+    <script src="libs/vue/vue.js"></script>
+</head>
+<body>
+<div class="wrapper" id="app">
+    <div class="scroller">
+        <div class="top-tips">down refresh</div>
+        <div class="swiper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" :data-src="list.href" v-for="list in bannerList">
+                        <img :src="list.src" alt="" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="gameListDiv">
+            <div class="gameDiv">
+                <div class="gameImgDiv">
+                    <img src="img/gameIcon/thumb_59423defbec10.jpg" class="gameImg"/>
+                </div>
+                <div class="gameInfoDiv" onclick="jump('01')">
+                    <p class="gameName">Poker</p>
+                    <p class="gameDes">This is a very fun poker game, welcome to play Oh!</p>
+                </div>
+                <div class="startGameDiv" onclick="jump('01')">
+                    <span class="btnStartGame">start</span>
+                </div>
+            </div>
+            <div class="gameDiv">
+                <div class="gameImgDiv" onclick="jump('02')">
+                    <img src="img/gameIcon/thumb_59425b82e8797.jpg" class="gameImg"/>
+                </div>
+                <div class="gameInfoDiv" >
+                    <p class="gameName">Fishing</p>
+                    <p class="gameDes">This is a very fun Fishing game, welcome to play Oh!</p>
+                </div>
+                <div class="startGameDiv" onclick="jump('02')">
+                    <span class="btnStartGame">start</span>
+                </div>
+            </div>
+			<div class="gameDiv">
+                <div class="gameImgDiv" onclick="jump('03')">
+                    <img src="img/gameIcon/thumb_59425b82e8798.jpg" class="gameImg"/>
+                </div>
+                <div class="gameInfoDiv" >
+                    <p class="gameName">Slot</p>
+                    <p class="gameDes">This is a very fun Slot game, welcome to play Oh!</p>
+                </div>
+                <div class="startGameDiv" onclick="jump('03')">
+                    <span class="btnStartGame">start</span>
+                </div>
+            </div>
+			<div class="gameDiv">
+                <div class="gameImgDiv" onclick="jump('04')">
+                    <img src="img/gameIcon/thumb_59425b82e8799.jpg" class="gameImg"/>
+                </div>
+                <div class="gameInfoDiv" >
+                    <p class="gameName">Span</p>
+                    <p class="gameDes">This is a very fun Span game, welcome to play Oh!</p>
+                </div>
+                <div class="startGameDiv" onclick="jump('04')">
+                    <span class="btnStartGame">start</span>
+                </div>
+            </div>
+          
+        </div>
+        <div class="bot-tips">loading more</div>
+    </div>
+    <div class="refresh-success-tips">success</div>
+</div>
+</body>
+
+<script src="libs/jquery/jquery-1.9.1.min.js"></script>
+<script src="libs/swipper/swiper.jquery.min.js"></script>
+<script src="libs/BScroll/bscroll.js"></script>
+<script src="libs/rem/rem.js"></script>
+
+<script>
+
+     new Vue({
+        el: '#app',
+        data() {
+            return {
+                bannerList: [
+                    {href: '', src: 'img/banners/banner_1.jpg'},
+                    {href: '', src: 'img/banners/banner_2.jpg'},
+                    {href: '', src: 'img/banners/banner_3.jpg'},
+                ]
+            }
+        },
+
+    });
+    $(function () {
+        //-----banner------
+        new Swiper('.swiper .swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+            autoplay: 2000,
+            autoplayDisableOnInteraction: false,
+            pagination: '.swiper-pagination',
+        });
+        //----banner-----
+        // $(document).on('click', '.swiper-slide', function () {
+            // window.location.href = $(this).attr('data-url');
+        // });
+    });
+    window.onload = function () {
+        const FLEX_DIS = 40;
+        const Bscroll = new BScroll('.wrapper', {
+            probeType: 1,
+            click: true
+        });
+        Bscroll.on('scroll', function (position) {
+            if (position.y > FLEX_DIS) {
+                $('.top-tips').text('Release for immediate refresh');
+            }
+        });
+        Bscroll.on('touchend', function (position) {
+            if (position.y > FLEX_DIS) {
+                setTimeout(function () {
+                    $('.top-tips').text('down refresh');
+                    /**
+                     * Ajax=====
+                     *
+                     *
+                     * ***/
+                    refreshData();
+                    $('.refresh-success-tips').fadeIn(800);
+                    setTimeout(function () {
+                        $('.refresh-success-tips').fadeOut(800);
+                    }, 1000);
+                    Bscroll.refresh();
+                }, 1000);
+            } else if (position.y < (this.maxScrollY - FLEX_DIS)) {
+                $('.bot-tips').text('loading...');
+                setTimeout(function () {
+                    loadingMoreData();
+                    Bscroll.refresh();
+                    $('.bot-tips').text('up load more...');
+                }, 1000);
+            }
+        });
+    };
+
+
+    function refreshData() {
+
+    }
+
+
+    function loadingMoreData() {
+
+    }
+
+    function onDevelop(){
+        alert("Sorry! This game to be developed")
+    }
+
+    function jump(val){
+        location.href = './'+val+'/index.html';
+    }
+</script>
+</html>

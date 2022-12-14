@@ -1,0 +1,206 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    position: relative;
+    display: -webkit-box;
+    overflow: hidden;
+    height: 100%;
+    min-width: 8.53333rem;
+    -webkit-touch-callout: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: stretch;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+section {
+    position: relative;
+    margin: 0 auto;
+    width: 10rem;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.machine {
+    width: 100%;
+    height: 11rem;
+    background: url(../img/machine_bg.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rotate_box {
+    width: 91%;
+    height: auto;
+    padding: 20% 7%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 20%;
+    left: 6%;
+}
+
+.rotate_box dd {
+    width: 30%;
+    height: 3.46667rem;
+    background: url("../img/prize.png");
+    background-size: cover;
+}
+
+.rotate_box dd:last-child {
+    margin-right: 0;
+}
+
+.rotate_btn {
+    width: 3.3rem;
+    /* height: 1.5rem; */
+    overflow: hidden;
+    position: absolute;
+    left: 51%;
+    bottom: 49%;
+    transform: translate(-50%, 480%);
+}
+
+.rotate_btn img {
+    height: 100%;
+}
+
+.btn_box {
+    width: 5.92rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -2.96rem;
+    bottom: 2.61333rem;
+}
+
+.poiner {
+    width: 0.88rem;
+    position: absolute;
+    right: -0.1rem;
+    top: 1.06667rem;
+}
+
+.btn_box {
+    width: 5.92rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -2.96rem;
+    bottom: 2.61333rem;
+}
+
+.t1 img {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.t2 {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-40%);
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.mask img {
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@keyframes pointMove {
+    0% {
+        top: 4.5rem;
+    }
+
+    70% {
+        top: 5rem
+    }
+
+    100% {
+        top: 4.5rem;
+    }
+}
+
+@-moz-keyframes pointMove
+
+/* Firefox */
+    {
+    0% {
+        top: 0;
+    }
+
+    70% {
+        top: 1.3rem
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@-webkit-keyframes pointMove
+
+/* Safari 和 Chrome */
+    {
+    0% {
+        top: 0;
+    }
+
+    70% {
+        top: 1.3rem
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@-o-keyframes pointMove
+
+/* Opera */
+    {
+    0% {
+        top: 0;
+    }
+
+    70% {
+        top: 1.3rem
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+
+
+.poiner {
+    animation: pointMove 2s infinite;
+    -webkit-animation: pointMove 2s infinite;
+    /* Safari 和 Chrome */
+}

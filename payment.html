@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <title>success</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: "PingFangSC-Light", "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .content {
+            width: 100%;
+            height: 100vh;
+            max-width: 640px;
+            margin: auto;
+            background-color: #F5F5F5;
+        }
+
+        .item {
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .item img {
+            height: 4rem;
+        }
+
+        .item span {
+            font-size: 1.3rem;
+            font-family: "楷体";
+            height: 7rem;
+            line-height: 7rem;
+            font-weight: 600;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="item">
+        <img src="payIcon.png" alt=""><span>success</span>
+    </div>
+</div>
+</body>
+<script>
+    (function () {
+        const docEl = document.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+        const recalc = function () {
+            const myfontSize = 20 * (docEl.clientWidth / 375);
+            console.info(myfontSize);
+            if (myfontSize > 30) {
+                docEl.style.fontSize = "30px";
+            } else {
+                docEl.style.fontSize = 20 * (docEl.clientWidth / 375) + 'px';
+            }
+        };
+        window.addEventListener(resizeEvt, recalc, false);
+        document.addEventListener('DOMContentLoaded', recalc, false);
+    })()
+</script>
+</html>

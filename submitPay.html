@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <title>sure</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: "PingFangSC-Light", "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .content {
+            width: 100%;
+            height: 100vh;
+            max-width: 640px;
+            margin: auto;
+            background-color: #F5F5F5;
+        }
+
+        .content .item:nth-child(1) {
+            height: 15vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .content .item:nth-child(1) span {
+            text-align: center;
+            line-height: 1.6rem;
+            height: 1.6rem;
+        }
+
+        .content .item:nth-child(1) span:nth-child(1) {
+            font-size: 0.9rem;
+        }
+
+        .content .item:nth-child(1) span:nth-child(2) {
+            font-size: 1.2rem;
+        }
+
+        .content .item:nth-child(2) {
+            height: 13vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #ffffff;
+        }
+
+        .content .item:nth-child(2) .list {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 1rem;
+            box-sizing: border-box;
+            font-size: 0.76rem;
+            line-height: 1.4rem;
+        }
+
+        .content .item:nth-child(2) .list span:nth-child(1) {
+            color: #B2B2B2;
+        }
+
+        .content .item:nth-child(3) {
+            margin-top: 3rem;
+        }
+
+        .content .item:nth-child(3), .content .item:nth-child(4) {
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 100%;
+            padding: 0 0.6rem;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            width: 100%;
+            background-color: #4AB651;
+            height: 2rem;
+            border-radius: 8px;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.82rem;
+            cursor: pointer;
+        }
+
+        .back {
+            background-color: #B2B2B2;
+        }
+
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="item">
+    </div>
+    <div class="item">
+        <div class="list">
+        </div>
+        <div class="list">
+        </div>
+    </div>
+    <div class="item ">
+    </div>
+    <div class="item ">
+        <a class="back btn" href="javascript:history.back();">return</a>
+    </div>
+</div>
+</body>
+<script src="libs/rem/rem.js"></script>
+</html>
